@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Coder Ali Blogs
-image: https://programmingwithharry.com/static/img/slider1.jpg
+image: /img/slider1.jpg
 heading: Great coffee with a conscience
 subheading: Heaven for tech-savvy people
 mainpitch:
