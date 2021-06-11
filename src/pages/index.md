@@ -13,13 +13,10 @@ intro:
     - image: /img/home-img-2.jpg
       text: We have compiled a list of best coding articles for you on this website.
         Feel free to access the blog section of this website
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+    - image: /img/home-img-3.jpg
+      text: Learn programming from these free courses. Examples are available with
+        these tutorials. You can contact me for any doubt and I will get back to
+        you!
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
