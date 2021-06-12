@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import { Button } from 'react-bootstrap';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -77,9 +78,9 @@ const Navbar = class extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon">
-                  <button>Subscribe</button>
-                </span>
+                <>
+                  <Button variant="danger">Subscribe</Button>{' '}
+                </>
               </a>
             </div>
           </div>
