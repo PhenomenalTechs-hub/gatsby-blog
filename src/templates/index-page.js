@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
@@ -14,8 +14,10 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  helmet,
 }) => (
   <div>
+    {helmet || ""}
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -124,6 +126,12 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        helmet={
+          <Helmet titleTemplate="%s | Blog">
+            <title>{`${frontmatter.title}`}</title>
+            <meta name="description" content={`${frontmatter.description}`} />
+          </Helmet>
+        }
       />
     </Layout>
   );
