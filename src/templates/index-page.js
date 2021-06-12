@@ -16,7 +16,6 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    {helmet || ""}
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -66,6 +65,7 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <section className="section section--gradient">
+      {helmet || ""}
       <div className="container">
         <div className="section">
           <div className="columns">
