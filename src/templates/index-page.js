@@ -16,6 +16,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    {helmet || ""}
     <div
       className="full-width-image margin-top-0"
       style={{
