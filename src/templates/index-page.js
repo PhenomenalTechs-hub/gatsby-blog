@@ -127,7 +127,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s">
             <title>{`${frontmatter.title}`}</title>
             <meta name="description" content={`${frontmatter.description}`} />
           </Helmet>
