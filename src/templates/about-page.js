@@ -49,7 +49,7 @@ const AboutPage = ({ data }) => {
         content={post.html}
         helmet={
           <Helmet titleTemplate="%s">
-            <title>About Us</title>
+            <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content="About Us" />
           </Helmet>
         }
