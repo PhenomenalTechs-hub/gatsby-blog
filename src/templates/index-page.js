@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
@@ -65,7 +65,6 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <section className="section section--gradient">
-      {helmet || ""}
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -119,12 +118,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${frontmatter.title}`}</title>
-            <meta name="description" content={`${frontmatter.description}`} />
-          </Helmet>
-        }
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
