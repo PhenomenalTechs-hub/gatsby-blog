@@ -120,11 +120,8 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
+            <title>{`${frontmatter.title}`}</title>
+            <meta name="description" content={`${frontmatter.description}`} />
           </Helmet>
         }
         title={frontmatter.title}
