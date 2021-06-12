@@ -6,16 +6,16 @@ import BlogRoll from "../../components/BlogRoll";
 export const BlogIndexPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Blogs</title>
-        <meta name="description" content="App Description" />
-      </Helmet>
       <div
         className="full-width-image-container margin-top-0"
         style={{
           backgroundImage: `url('/img/blog-index.jpg')`,
         }}
       >
+        <Helmet>
+          <title>Blogs</title>
+          <meta name="description" content="App Description" />
+        </Helmet>
         <h1
           className="has-text-weight-bold is-size-1"
           style={{
